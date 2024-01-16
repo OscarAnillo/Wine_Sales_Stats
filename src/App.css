@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.App {
+    background: url("https://i.gifer.com/EMQW.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* TextComponent */
+.text-div {
+    background-color: rgba(189, 184, 184, 0.2);
+    border-radius: 5px;
+    margin: 0 auto;
+    width: 90%;
+    text-align: left;
+    color: #fff;
+    padding: .6em .5em;
+    height: auto;
+}
+.text-div h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: .5em;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #000;
+}
+.text-div p {
+    line-height: 1.7rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 1px 1px 1px #000;
+    font-size: 1.25rem;
+}
+.text-div .numbers-link {
+    background-color: rgb(211, 37, 37);
+    color: #fff;
+    padding: .6em 1em;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    width: 50%;
+}
+
+/* StatsComponent */
+.stats-div {
+    background-color: rgba(189, 184, 184, 0.85);
+    border-radius: 5px;
+    padding: 1em;
+}
+.stats-container {
+    margin: 1.8em 2em;
+    border: 3px dotted #fff;
+    min-width: 200px;
+    height: 150px;
+    position: relative;
+    padding: 20px;
+}
+
+.icon {
+    position: absolute;
+    top: -28px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.counter {
+    color: red;
+    font-weight: 600;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-shadow: 1px 1px 1px #000;
+    font-size: 5rem;
+}
+.stats-container h4 {
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    transform: translate(-50%);
+    white-space: nowrap;
+    color: #000;
+    font-size: 1.1rem;
+}
+
+@media(min-width: 760px) {
+    .App {
+        display: flex;
+        flex-direction: row;
+        background-position: top;
+    }
+    /* TextComponent */
+    .text-div {
+        width: 90%;
+        max-width: 760px;
+        padding: 1em .5em;
+    }
+    .text-div h1 {
+        font-size: 3rem;
+    }
+    .text-div .numbers-link {
+        background-color: rgb(211, 37, 37);
+        color: #fff;
+        padding: .6em 1em;
+        border-radius: 5px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2rem;
+        width: 35%;
+    }
+
+}
