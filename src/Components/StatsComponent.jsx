@@ -13,7 +13,7 @@ export const StatsComponent = () => {
         currentData = Math.ceil(currentData + incrementMinorNumber);
         if (currentData < dataCeilAttribute) {
           counter.innerText = currentData;
-          setTimeout(increment, 100);
+          setTimeout(increment, 60);
         } else {
           counter.innerText = dataCeilAttribute;
         }
@@ -39,8 +39,8 @@ export const StatsComponent = () => {
       </div>
       <div className="stats-container">
         <i className="fab fa-apple fa-3x icon"></i>
-        <div className="counter" data-ceil="27">
-          27
+        <div className="counter" data-ceil="7">
+          7
         </div>
         <h4>Somos Proveedores</h4>
       </div>
