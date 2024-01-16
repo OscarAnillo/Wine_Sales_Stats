@@ -9,6 +9,12 @@ export const SocialMedia = () => {
       <Link to="https://www.instagram.com/mel.arr_drinks/" target="_blank">
         <i className="fa-brands fa-instagram"></i>
       </Link>
+      <Link
+        to="https://api.whatsapp.com/send/?phone=573004072196&text&type=phone_number&app_absent=0"
+        target="_blank"
+      >
+        <i className="fa-brands fa-whatsapp"></i>
+      </Link>
       <i className="fa-brands fa-twitter"></i>
     </div>
   );
